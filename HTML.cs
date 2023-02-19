@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace lab2 {
   class HTML : Document {
-    string DocumentHTMLClassesUsed;
-    int DocumentHTMLStringCount;
+    string DocumentHTMLClassesUsed, DocumentHTMLStringCount;
 
     public HTML(string DocumentTitle, string DocumentAuthor, string DocumentKeyWord, string DocumentPath,
       string DocumentTopic) {
@@ -18,7 +17,7 @@ namespace lab2 {
       this.DocumentTopic = DocumentTopic;
 
       Console.WriteLine("Введите количество строк: ");
-      DocumentHTMLStringCount = int.Parse(Console.ReadLine());
+      DocumentHTMLStringCount = Console.ReadLine();
 
       Console.WriteLine("Введите используемые классы: ");
       DocumentHTMLClassesUsed = Console.ReadLine();

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace lab2 {
   class Excel : Document {
-    int DocumentExcelRowCount, DocumentExcelColumnCount;
+    string DocumentExcelRowCount, DocumentExcelColumnCount;
 
     public Excel(string DocumentTitle, string DocumentAuthor, string DocumentKeyWord, string DocumentPath,
       string DocumentTopic) {
@@ -17,10 +17,10 @@ namespace lab2 {
       this.DocumentTopic = DocumentTopic;
 
       Console.WriteLine("Введите количество столбцов: ");
-      DocumentExcelColumnCount = int.Parse(Console.ReadLine());
+      DocumentExcelColumnCount = Console.ReadLine();
 
       Console.WriteLine("Введите количество строк: ");
-      DocumentExcelRowCount = int.Parse(Console.ReadLine());
+      DocumentExcelRowCount = Console.ReadLine();
     }
 
     public override void DocumentInfo() {

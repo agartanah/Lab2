@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace lab2 {
   class TXT : Document {
-    int DocumentTXTStringCount, DocumentTXTSignCount;
+    string DocumentTXTStringCount, DocumentTXTSignCount;
 
     public TXT(string DocumentTitle, string DocumentAuthor, string DocumentKeyWord, string DocumentPath,
       string DocumentTopic) {
@@ -17,10 +17,10 @@ namespace lab2 {
       this.DocumentTopic = DocumentTopic;
 
       Console.WriteLine("Введите количество символов: ");
-      DocumentTXTSignCount = int.Parse(Console.ReadLine());
+      DocumentTXTSignCount = Console.ReadLine();
 
       Console.WriteLine("Введите количество строк: ");
-      DocumentTXTStringCount = int.Parse(Console.ReadLine());
+      DocumentTXTStringCount = Console.ReadLine();
     }
 
     public override void DocumentInfo() {

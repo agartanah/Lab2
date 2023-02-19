@@ -8,7 +8,12 @@ namespace lab2 {
   class Singletone {
     private static Singletone instance;
 
-    public static Singletone Instance { get { instance = new Singletone(); return instance; } }
+    public static Singletone Instance { 
+      get { 
+        instance = new Singletone(); 
+        return instance; 
+      } 
+    }
 
     enum Types {
       TXT = 1,
