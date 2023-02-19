@@ -29,3 +29,4 @@ namespace lab2 {
         $"Количество столбцов: {DocumentExcelColumnCount}\n");
     }
   }
+}
