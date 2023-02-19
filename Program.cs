@@ -8,7 +8,7 @@ namespace lab2 {
   class Singletone {
     private static Singletone instance;
 
-    public static Singletone Instance { get; }
+    public static Singletone Instance { get { instance = new Singletone(); return instance; } }
 
     enum Types {
       TXT = 1,
@@ -68,11 +68,9 @@ namespace lab2 {
 
   class Program {
     static void Main(string[] args) {
-      //Singletone Input = new Singletone();
-
-      //Input.DataInput();
-
       Singletone.Instance.DataInput();
+
+      Console.ReadKey();
     }
   }
 }
