@@ -1,8 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿/***************************
+ * Автор: Вяткин Владислав *
+ * Дата: 19.02.2023        *
+ * Тема: ООП               *
+ ***************************/
+using System;
 
 namespace lab2 {
   class Singletone {
